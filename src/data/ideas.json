@@ -1,0 +1,64 @@
+// Datos estáticos - Ideas de videos
+// Utilizado por el generador de ideas
+
+export const ideasData = [
+  {
+    id: 1,
+    title: "¿Qué pasaría si los hombres lobo fueran reales?",
+    category: "terror",
+    duration: 20,
+    difficulty: "media"
+  },
+  {
+    id: 2,
+    title: "5 datos escalofriantes del hombre lobo",
+    category: "educación",
+    duration: 60,
+    difficulty: "baja"
+  },
+  {
+    id: 3,
+    title: "Mitología vs Realidad - Hombres Lobo",
+    category: "documentación",
+    duration: 45,
+    difficulty: "media"
+  },
+  {
+    id: 4,
+    title: "Confesión: Yo soy un hombre lobo",
+    category: "drama",
+    duration: 30,
+    difficulty: "alta"
+  },
+  {
+    id: 5,
+    title: "Mi vecino es un hombre lobo",
+    category: "horror-comedia",
+    duration: 25,
+    difficulty: "media"
+  },
+];
+
+export const trends = [
+  "hombres lobo",
+  "terror paranormal",
+  "horror stories",
+  "creepypasta",
+  "urban legend",
+];
+
+export const templates = {
+  shortForm: {
+    hook: "Primeros 3 segundos - Gancha",
+    development: "Contenido principal",
+    twist: "Giro inesperado",
+    cta: "Call to action"
+  },
+  longForm: {
+    intro: "Introducción",
+    setup: "Contexto",
+    climax: "Punto de tensión",
+    resolution: "Resolución",
+    cta: "Call to action"
+  }
+};

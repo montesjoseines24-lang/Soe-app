@@ -1,0 +1,171 @@
+/* Estilos principales */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: #fff;
+  min-height: 100vh;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom: 2px solid #e94560;
+}
+
+.header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #e94560;
+}
+
+.header p {
+  font-size: 1.1em;
+  opacity: 0.8;
+}
+
+.container {
+  flex: 1;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  width: 100%;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.input-section input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #e94560;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 1em;
+}
+
+.input-section input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.input-section button {
+  padding: 12px 30px;
+  background: #e94560;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.input-section button:hover {
+  background: #d9345f;
+  transform: scale(1.05);
+}
+
+.ideas-list {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ideas-list h2 {
+  margin-bottom: 20px;
+  color: #e94560;
+}
+
+.empty {
+  text-align: center;
+  opacity: 0.6;
+  padding: 40px 20px;
+}
+
+.ideas-list ul {
+  list-style: none;
+}
+
+.ideas-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  background: rgba(233, 69, 96, 0.1);
+  border-left: 3px solid #e94560;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+
+.ideas-list li:hover {
+  background: rgba(233, 69, 96, 0.2);
+  transform: translateX(5px);
+}
+
+.ideas-list h3 {
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.ideas-list small {
+  opacity: 0.6;
+  font-size: 0.9em;
+}
+
+.delete {
+  background: #e94560;
+  color: white;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: all 0.3s;
+}
+
+.delete:hover {
+  background: #d9345f;
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 1.8em;
+  }
+
+  .container {
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  .input-section {
+    flex-direction: column;
+  }
+
+  .input-section input,
+  .input-section button {
+    width: 100%;
+  }
+}
